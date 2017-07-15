@@ -1,0 +1,88 @@
+{  
+   "cacheType":[  
+      {  
+         "1":"Subscriptions"
+      },
+      {  
+         "2":"Licenses"
+      },
+      {  
+         "3":"Subscription Entitlements"
+      },
+      {  
+         "4":"License Devices"
+      },
+      {  
+         "5":"User Roles - Subscriptions"
+      },
+      {  
+         "6":"Access - Subscriptions"
+      },
+      {  
+         "7":"Coverage Template"
+      },
+      {  
+         "8":"Attributes - Subscriptions"
+      },
+      {  
+         "9":"Item Master"
+      },
+      {  
+         "10":"MDF"
+      },
+      {  
+         "11":"Contracts"
+      },
+      {  
+         "12":"Contract Entitlements"
+      },
+      {  
+         "13":"User Roles - Contracts"
+      },
+      {  
+         "14":"Access - Contracts"
+      },
+      {  
+         "15":"Attributes - Contracts"
+      },
+      {  
+         "16":"Covered Products"
+      },
+      {  
+         "17":"User Profile (Federation)"
+      },
+      {  
+         "18":"User Persona (Federation)"
+      }
+   ],
+   "totalEntries":2,
+   "headers":[  
+      "executedAt",
+      "executionTime",
+      "unitsOfExecutionTime",
+      "sourceCount",
+      "destinationCount",
+      "mismatchCount",
+      "cacheType"
+   ],
+   "entries":[  
+      [  
+         "2017-17-23T18:25:43.511Z",
+         30,
+         "Sec",
+         34231,
+         33212,
+         1019,
+         1
+      ],
+      [  
+         "2017-18-23T06:12:24.452Z",
+         20,
+         "Sec",
+         15112,
+         14255,
+         857,
+         3
+      ]
+   ]
+}

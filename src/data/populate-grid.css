@@ -1,0 +1,21 @@
+:host /deep/ .data-table-row {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#tableGrid {
+	margin: auto;
+	max-width: 1500px;
+	margin-bottom: 50px;
+	font-weight: normal;
+}
+
+.grid-header {
+	text-align: center;
+	margin-top: 10px;
+	font-weight: bold;
+	text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/x.x.x/ng2-bootstrap.min.js"></script>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
+
+<div class="align-center font-group">
+	<h1 id="platform-ui-header" class="font-header-text">{{title}}</h1>
+
+	<div id="userSelection">
+		<ul class="align-left font-inline-text">
+			<li><label>Comparison Type : </label> <label
+				class="padding-sideways"><input type="radio" id="radio"
+					name="comparison-type" value="Count" /> {{comparisonType[0]}} </label> <label
+				class="padding-sideways"><input type="radio"
+					name="comparison-type" value="Attribute" /> {{comparisonType[1]}}
+			</label></li>
+
+			<li><label>Select Cache : </label> <select
+				[(ngModel)]="selectedCache">
+					<option *ngFor="let cache of cacheTypes"
+						[ngValue]="cache.cacheType">{{cache.cacheName}}</option>
+			</select></li>
+
+			<li><label>Period : </label> <label class="padding-sideways">
+					<input [(ngModel)]="dateTimePicker" type="radio" id="radio"
+					name="period" value="All" /> {{periodType[0]}}
+			</label> <label class="padding-sideways"><input
+					[(ngModel)]="dateTimePicker" type="radio" name="period"
+					value="Range" /> {{periodType[1]}} </label></li>
+
+			<li><label *ngIf="dateTimePicker=='Range'"> <my-date-range-picker
+						[options]="myDateRangePickerOptions"
+						(dateRangeChanged)="onDateRangeChanged($event)"></my-date-range-picker>
+			</label></li>
+
+			<li>
+				<button id="submit" md-button (click)="populateGrid()">Submit</button>
+			</li>
+
+			<li><label *ngIf="showGrid"><app-populate-grid></app-populate-grid></label></li>
+		</ul>
+	</div>
+</div>
+
